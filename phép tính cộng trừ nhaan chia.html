@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nhân chia cộng trừ</title>
+</head>
+<body>
+<h1 id="rs">Calculator</h1>
+<input type="number" id="st1">
+<input type="number" id="st2"> <br>
+<button onclick="tinh()">Tính tổng
+
+</button>
+<script>
+  function tinh(){
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    document.getElementById('rs').innerHTML ='Tổng là: ' +(a+b);}
+</script>
+<button onclick="tinh1()">Tính hiệu
+
+</button>
+<script>
+  function tinh1(){
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    document.getElementById('rs').innerHTML ='hiệu là: ' +(a-b);}
+</script>
+<button onclick="tinh2()">Tính tích
+
+</button>
+<script>
+  function tinh2(){
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    document.getElementById('rs').innerHTML ='tích là: ' +(a*b);}
+</script>
+<button onclick="tinh3()">Tính thương
+
+</button>
+<script>
+  function tinh3(){
+    let a = +document.getElementById('st1').value;
+    let b = +document.getElementById('st2').value;
+    document.getElementById('rs').innerHTML ='thương là: ' +(a/b);}
+</script>
+</body>
+</html>
