@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài4e</title>
+</head>
+<body>
+<p id="hienthi3"></p>
+<script>
+    let a;
+    let b;
+    let c;
+    a = prompt("Nhập a");
+    b = prompt("b");
+    c = prompt("Nhập c");
+    if (a < b + c && b < a + c && c < b + c)
+    {
+        document.getElementById('hienthi3').innerHTML = "tam giác nhọn";
+    } else if (a * a == b * b + c * c || b * b == a * a + c * c || c * c == b * b + a * a)
+        {
+            document.getElementById('hienthi3').innerHTML = "tam giác vuông";
+        } else if (a == b && b == c)
+        {
+            document.getElementById('hienthi3').innerHTML = "tam giác đều";
+        } else if (a == b || b == c || a == c)
+            {
+            document.getElementById('hienthi3').innerHTML = "tam giác cân";
+            }
+    else
+        {
+            document.getElementById('hienthi3').innerHTML = "Không phải tam giác";
+        }
+
+</script>
+
+</body>
+</html>

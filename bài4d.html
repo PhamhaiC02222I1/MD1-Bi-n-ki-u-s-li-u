@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài4d</title>
+</head>
+<body>
+<p id="hienthi2"></p>
+<script>
+    let theki;
+    let nam;
+    nam = prompt("Nhập năm");
+if (nam%100==0)
+{
+    theki = Math.floor(nam/100);
+}else {
+    theki = Math.floor(nam/100) + 1;
+}
+
+    document.getElementById('hienthi2').innerHTML ="Thế Kỉ: " +theki;
+</script>
+</body>
+</html>
