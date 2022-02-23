@@ -8,9 +8,11 @@
 <h1 id="rs">Calculator</h1>
 <input type="number" id="st1">
 <input type="number" id="st2"> <br>
-<button onclick="tinh()">Tính tổng
+
+
 
 </button>
+
 <script>
   function tinh(){
     let a = +document.getElementById('st1').value;
@@ -43,6 +45,19 @@
     let a = +document.getElementById('st1').value;
     let b = +document.getElementById('st2').value;
     document.getElementById('rs').innerHTML ='thương là: ' +(a/b);}
+</script>
+<br>
+
+
+<input type="text" id="st3"> <br>
+<button onclick="canbac2()" id="canbachai">canbac2</button>
+<script>
+    function canbac2(){
+let data = document.getElementById('st3').value;
+document.getElementById('rs').innerHTML= Math.sqrt(data);
+
+
+    }
 </script>
 </body>
 </html>
